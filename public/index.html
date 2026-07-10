@@ -115,33 +115,13 @@
     </footer>
 
     <script>
+        const API_BASE = 'https://your-backend-name.onrender.com/api'; // <<< CHANGE THIS LINE TO YOUR RENDER BACKEND URL
+
         let currentLang = 'en';
 
         const translations = {
-            en: {
-                title: 'FamilySecure | Permanent Life Insurance with Cash Value',
-                heroTitle: 'One policy.<br>Health protection. Education funding.<br>Emergency cash access.',
-                registerBtn: 'Register Free',
-                loginBtn: 'Login',
-                adminBtn: 'Admin',
-                howItWorks: 'How It Works',
-                calculator: 'Calculator',
-                stories: 'Stories',
-                pricing: 'Plans',
-                faq: 'FAQ',
-            },
-            de: {
-                title: 'FamilySecure | Permanente Lebensversicherung mit Barwert',
-                heroTitle: 'Eine Police.<br>Gesundheitsschutz. Bildungsfinanzierung.<br>Notfall-Cash-Zugang.',
-                registerBtn: 'Kostenlos Registrieren',
-                loginBtn: 'Anmelden',
-                adminBtn: 'Admin',
-                howItWorks: 'Wie es funktioniert',
-                calculator: 'Rechner',
-                stories: 'Geschichten',
-                pricing: 'Pläne',
-                faq: 'FAQ',
-            }
+            en: { title: 'FamilySecure | Permanent Life Insurance with Cash Value', heroTitle: 'One policy.<br>Health protection. Education funding.<br>Emergency cash access.' },
+            de: { title: 'FamilySecure | Permanente Lebensversicherung mit Barwert', heroTitle: 'Eine Police.<br>Gesundheitsschutz. Bildungsfinanzierung.<br>Notfall-Cash-Zugang.' }
         };
 
         function switchLanguage(lang) {
@@ -151,7 +131,7 @@
             alert(`Language switched to ${lang === 'en' ? 'English' : 'German'}.`);
         }
 
-        console.log('Full site with translation loaded.');
+        console.log('Full site loaded. Update API_BASE with your Render URL.');
     </script>
 </body>
 </html>
